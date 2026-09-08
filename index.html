@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>카페 온기 | Cafe Ongi</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="header" id="header">
+  <div class="container header-inner">
+    <a href="#home" class="logo">카페 온기</a>
+    <nav class="nav" id="nav">
+      <a href="#about">소개</a>
+      <a href="#menu">메뉴</a>
+      <a href="#location">오시는 길</a>
+      <a href="#contact">문의</a>
+    </nav>
+    <button class="nav-toggle" id="navToggle" aria-label="메뉴 열기">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<section class="hero" id="home">
+  <div class="hero-content">
+    <p class="hero-eyebrow">Since 2020</p>
+    <h1>천천히, 따뜻하게<br>머무르는 시간</h1>
+    <p class="hero-desc">직접 로스팅한 원두와 정성스러운 디저트로<br>하루의 쉼을 전하는 카페 온기입니다.</p>
+    <a href="#menu" class="btn">메뉴 보러가기</a>
+  </div>
+</section>
+
+<section class="about" id="about">
+  <div class="container about-inner">
+    <div class="about-text">
+      <p class="section-eyebrow">About</p>
+      <h2>커피에 진심인 사람들</h2>
+      <p>카페 온기는 매일 아침 직접 원두를 로스팅하며 하루를 시작합니다.
+      좋은 원두, 좋은 사람, 좋은 공간이 만나면 특별한 시간이 된다고 믿어요.
+      바쁜 일상 속에서 잠시 멈춰 온기를 나누어 가시길 바랍니다.</p>
+      <ul class="about-list">
+        <li>직접 로스팅한 스페셜티 원두</li>
+        <li>매일 아침 구운 수제 디저트</li>
+        <li>반려동물과 함께할 수 있는 테라스</li>
+      </ul>
+    </div>
+    <div class="about-image" aria-hidden="true"></div>
+  </div>
+</section>
+
+<section class="menu" id="menu">
+  <div class="container">
+    <p class="section-eyebrow center">Menu</p>
+    <h2 class="center">시그니처 메뉴</h2>
+    <div class="menu-grid">
+      <div class="menu-item">
+        <div class="menu-thumb coffee"></div>
+        <h3>온기 라떼</h3>
+        <p>고소한 시나몬과 부드러운 우유가 어우러진 시그니처 라떼</p>
+        <span class="price">6,000원</span>
+      </div>
+      <div class="menu-item">
+        <div class="menu-thumb americano"></div>
+        <h3>핸드드립 아메리카노</h3>
+        <p>매주 바뀌는 싱글 오리진 원두로 내린 깔끔한 한 잔</p>
+        <span class="price">5,000원</span>
+      </div>
+      <div class="menu-item">
+        <div class="menu-thumb dessert"></div>
+        <h3>바스크 치즈케이크</h3>
+        <p>진한 크림치즈와 겉바속촉 식감의 수제 디저트</p>
+        <span class="price">7,500원</span>
+      </div>
+      <div class="menu-item">
+        <div class="menu-thumb tea"></div>
+        <h3>캐모마일 티</h3>
+        <p>은은한 꽃향으로 마음을 편안하게 해주는 허브티</p>
+        <span class="price">5,500원</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="location" id="location">
+  <div class="container location-inner">
+    <div class="location-map" aria-hidden="true"></div>
+    <div class="location-info">
+      <p class="section-eyebrow">Location</p>
+      <h2>오시는 길</h2>
+      <dl>
+        <dt>주소</dt>
+        <dd>서울특별시 마포구 온기길 12, 1층</dd>
+        <dt>영업시간</dt>
+        <dd>매일 09:00 - 21:00 (연중무휴)</dd>
+        <dt>전화</dt>
+        <dd>02-1234-5678</dd>
+      </dl>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="container">
+    <p class="section-eyebrow center">Contact</p>
+    <h2 class="center">문의하기</h2>
+    <form class="contact-form" id="contactForm">
+      <input type="text" placeholder="이름" required>
+      <input type="email" placeholder="이메일" required>
+      <textarea rows="4" placeholder="문의 내용을 남겨주세요" required></textarea>
+      <button type="submit" class="btn">보내기</button>
+    </form>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <p>&copy; 2026 카페 온기. All rights reserved.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
