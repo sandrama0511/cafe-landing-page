@@ -139,11 +139,28 @@ h2 {
   position: absolute;
   left: 0;
 }
-.about-image {
-  aspect-ratio: 4/3;
+.about-diagram {
+  background: var(--white);
   border-radius: 20px;
-  background: linear-gradient(135deg, var(--brown-light), var(--brown));
+  padding: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
 }
+.about-diagram svg { width: 100%; max-width: 280px; height: auto; display: block; }
+
+/* Story (timeline) & Journey sections */
+.story { background: var(--white); }
+.diagram-wrap {
+  margin-top: 48px;
+  overflow-x: auto;
+  background: var(--cream);
+  border-radius: 20px;
+  padding: 28px 24px;
+}
+.journey .diagram-wrap { background: var(--white); }
+.diagram-wrap svg { display: block; margin: 0 auto; min-width: 700px; max-width: 100%; }
 
 /* Menu */
 .menu { background: var(--white); }
@@ -228,5 +245,5 @@ h2 {
   .nav.open { display: flex; }
   .nav-toggle { display: flex; }
   .about-inner, .location-inner { grid-template-columns: 1fr; }
-  .about-image, .location-map { order: -1; }
+  .about-diagram, .location-map { order: -1; }
 }
